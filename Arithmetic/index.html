@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>テスト</title>
+  </head>
+  <script type="text/javascript" src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+  <div id="menu">
+    <h1>Menu</h1>
+    <span>
+      <ol class="menu_item_ul">
+        <li class="menu_item_li">＋ 足し算</li>
+        <li class="menu_item_li">－ 引き算</li>
+        <li class="menu_item_li">× 割り算</li>
+        <li class="menu_item_li">÷ 掛け算</li>
+      </ol>
+      <div class="menu_item_result">前回結果：<span id="timer_result" class="menu_item_result"></span> 秒</div>
+    </span>
+  </div>
+  <div id="formula" class="formula" style="display:none">
+    <div>
+      <span class="formula_item">第</span>
+      <span id='problem_count' class="formula_item"></span>
+      <span class="formula_item">問</span>
+      <span id='timer' class="formula_timer"></span>
+    </div>
+    <span id="first" class="formula_item"></span>  
+    <span id="operator" class="formula_item"></span>
+    <span id="second" class="formula_item"></span>
+    <span class="formula_item">=</span>
+    <span id="answer" class="formula_item"></span>
+    <table class="formula_longhand">
+      <tr>
+        <td class="formula_item long"></td>
+        <td id="first_l" class="formula_item long"></td>
+      </tr>
+      <tr>
+        <td id="operator_l" class="formula_item long"></td>
+        <td id="second_l" class="formula_item long"></td>
+      </tr>
+      <tr>
+        <td id="answer_l" class="formula_item long formula_longhand_line" colspan="2"></td>
+      </tr>
+
+    </table>
+  </div>
+
+
+
+</html>
+
+
